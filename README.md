@@ -3,6 +3,7 @@
 This container provides an API test the local internet speed.
 
 ## Run
+Check out this repository and run the following commands in the folder.
 
 ### Local
 
@@ -11,6 +12,21 @@ Have a current NodeJS version (>8) installed. Check out this repository and run 
 ```sh
 npm install
 npm start
+```
+
+### Docker
+Have Docker installed and the deamon running.
+
+```sh
+docker build -t <your-name>/speedtest .
+docker run -p 3000:3000 -d <your-name>/speedtest
+```
+
+### Docker Compose
+Have docker-compose installed and the docker deamon running.
+
+```sh
+docker-compose up -d
 ```
 
 ### Use
