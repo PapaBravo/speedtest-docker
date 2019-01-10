@@ -1,0 +1,22 @@
+{
+  "name": "speedtest-docker",
+  "version": "1.0.0",
+  "description": "Node.js on Docker that exposes a speedtest API",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PapaBravo/speedtest-docker.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "homepage": "https://github.com/PapaBravo/speedtest-docker#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "moment": "^2.23.0",
+    "speedtest-net": "^1.4.3"
+  }
+}
