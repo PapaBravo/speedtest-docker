@@ -2,6 +2,7 @@
 
 const express = require('express');
 const speedTest = require('speedtest-net');
+const {version} = require('./package.json');
 
 async function getCurrentSpeed() {
     return new Promise((resolve, reject) => {
@@ -20,7 +21,7 @@ const HOST = '0.0.0.0';
 // App
 const app = express();
 app.get('/', (req, res) => {
-  res.send('Hello world\n');
+  res.send(`Speedtest is running on version ${version}`);
 });
 
 app.get('/speedtest', async (req, res) => {
